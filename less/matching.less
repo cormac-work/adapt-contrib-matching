@@ -1,14 +1,41 @@
+//MODIFICATION TO MATCHING TO INLINE BLOCK TO MAKE IT FLOW HORIZONTALLY
+
+
 .matching-component {
+	display: inline-block;
+	float: left;
+	position: relative;
+
 
 	.matching-item {
+		display: inline-block;
+		vertical-align: bottom;
+		text-align: left;
+		position: relative;
 		padding-bottom: @item-padding-bottom;
 	}
 
 	.matching-item-title {
+		display: inline-block;
+		vertical-align: bottom;
+		text-align: left;
+		position: relative;
 		margin-bottom: @item-margin-bottom;
 	}
 
+	.matching-item-suffix {
+		display: inline-block;
+		vertical-align: bottom;
+		text-align: left;
+		position: relative;
+		margin-bottom: @item-margin-bottom;
+	}
+
+
 	.matching-select-container {
+		display: inline-block;
+		vertical-align: bottom;
+		text-align: bottom;
 		position: relative;
 		overflow: hidden;
 		background-color: @item-color;
@@ -42,6 +69,8 @@
 		-moz-border-radius: 0;
 		border-radius: 0;
 		background: transparent;
+		vertical-align: bottom;
+
 		color: @item-text-color;
 		cursor: pointer;
 		&:focus {
@@ -55,7 +84,7 @@
 		@media all and (max-width:@device-width-medium) and (min-width:@device-width-small) {
 				width:105%;
 		}
-			
+
 		@media all and (max-width:@device-width-small) {
 			 width:110%;
 		}
